@@ -2,4 +2,6 @@
 layout: base
 ---
 
-Hello Internet
+[Pathological C++](/cpp)
+
+[Игра Точки -- Анализ](/dots)
