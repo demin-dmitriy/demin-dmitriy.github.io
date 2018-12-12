@@ -1,6 +1,15 @@
 @mixin card() {
 	box-shadow: 1px 1px 2px #bfbfbf;
 	background-color: white;
+	border-radius: 3px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #e1e4e8!important;
+}
+
+.date {
+	color: grey;
 }
 
 body {
