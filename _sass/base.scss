@@ -18,10 +18,10 @@ body {
 #main {
 	margin: auto;
 	max-width: 760px;
-	padding-top: 33px;
+	padding-top: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 300;
 }
 
@@ -38,25 +38,23 @@ body {
 
 #posts {
 	display: table;
-	// border-collapse: separate;
-	// border-spacing: 0px 5px;
 }
 
 .post {
 	display: table-row;
-}
 
-.post .date {
-	display: table-cell;
-	color: $grey-color;
-	width: 165px;
-}
+	.date {
+		display: table-cell;
+		color: $grey-color;
+		width: 155px;
+	}
 
-.post .link {
-	display: table-cell;
-}
+	.link {
+		display: table-cell;
 
-.post .link a {
-	color: $link-color;
-	text-decoration: none;
+		a {
+			color: $link-color;
+			text-decoration: none;
+		}
+	}
 }
