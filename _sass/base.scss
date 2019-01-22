@@ -1,27 +1,62 @@
-@mixin card() {
-	box-shadow: 1px 1px 2px #bfbfbf;
-	background-color: white;
-	border-radius: 3px;
-}
+$grey-color: rgb(130, 130, 130);
+$link-color: rgb(71, 99, 169);
 
-.border-bottom {
-	border-bottom: 1px solid #e1e4e8!important;
-}
-
-.date {
-	color: grey;
+@mixin bottom-line() {
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-color: rgb(236, 236, 236);
 }
 
 body {
-	background-color: #edeef0;
+	margin: 0px;
+	font-family: 'Open Sans';
 }
 
 #main {
-	@include card();
 	margin: auto;
-	width: 800px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	max-width: 760px;
+	padding-top: 33px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 19px;
+	font-weight: 300;
+}
+
+#header {
+	height: 50px;
+	@include bottom-line();
+}
+
+#header-content {
+	margin: auto;
+	max-width: 800px;
+	text-align: right;
+}
+
+#posts {
+	display: table;
+	// border-collapse: separate;
+	// border-spacing: 0px 5px;
+}
+
+.post {
+	display: table-row;
+}
+
+.post .date {
+	display: table-cell;
+	color: $grey-color;
+	width: 165px;
+}
+
+.post .link {
+	display: table-cell;
+}
+
+.post .link a {
+	color: $link-color;
+	text-decoration: none;
 }

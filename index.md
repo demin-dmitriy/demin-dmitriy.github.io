@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: dots/base
 ---
 
 [Pathological C++](/cpp)

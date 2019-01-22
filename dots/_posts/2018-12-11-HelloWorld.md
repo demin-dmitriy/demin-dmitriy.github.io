@@ -1,5 +1,5 @@
 ---
-layout: post
-title: a.md
+layout: dots/post
+title: Микрооптимизация ходов
 ---
 a

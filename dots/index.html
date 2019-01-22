@@ -1,12 +1,14 @@
 ---
-layout: base
+layout: dots/base
 ---
 
-{% for post in site.posts %}
-	{% if post.categories contains 'dots' %}
-		<div class='post'>
-			<span class='date'>{{ post.date }}</span>
-			<a href='{{ post.url }}'>{{ post.title }}</a>
-		</div>
-	{% endif %}
-{% endfor %}
+<div id='posts'>
+	{% for post in site.posts %}
+		{% if post.categories contains 'dots' %}
+			<div class='post'>
+				<div class='date'>{% include format_date date=post.date %}</div>
+				<div class='link'><a href='{{ post.url }}'>{{ post.title }}</a></div>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
