@@ -1,4 +1,77 @@
 ---
 ---
 
-@import "base"
+$grey-color: rgb(130, 130, 130);
+$link-color: rgb(71, 99, 169);
+
+@mixin bottom-line() {
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-color: rgb(236, 236, 236);
+}
+
+body {
+	margin: 0px;
+	font-family: 'Open Sans';
+}
+
+#main {
+	margin: auto;
+	max-width: 760px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+#header {
+	height: 50px;
+	@include bottom-line();
+}
+
+#header-content {
+	margin: auto;
+	max-width: 800px;
+	text-align: right;
+}
+
+#posts {
+	display: table;
+}
+
+.post {
+	display: table-row;
+
+	.date {
+		display: table-cell;
+		color: $grey-color;
+		width: 155px;
+	}
+
+	.link {
+		display: table-cell;
+
+		a {
+			color: $link-color;
+			text-decoration: none;
+		}
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+p {
+	text-align: justify;
+}
