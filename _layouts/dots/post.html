@@ -2,9 +2,13 @@
 layout: dots/base
 ---
 <div class='title center'>{{ page.title }}</div>
+
 <div class='subtitle center'><a class='link' href='/about'>Дёмин Дмитрий</a></div>
 {% if page.acknowledgements %}
 	<div class='subtitle center'>{{ page.acknowledgements }}</div>
 {% endif %}
 <div class='subtitle center'>{% include format_date date=page.date %}</div>
+
 {{ content }}
+
+{% include dots/comments.html %}
