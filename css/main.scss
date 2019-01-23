@@ -89,3 +89,9 @@ p {
 		display: block;
 	}
 }
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	margin: 0 auto; // TODO: tweak margin
+	text-align: center;
+}
