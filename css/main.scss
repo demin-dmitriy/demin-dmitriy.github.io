@@ -4,7 +4,18 @@
 $grey-color: rgb(130, 130, 130);
 $link-color: rgb(71, 99, 169);
 
-@mixin bottom-line() {
+/* generic */
+
+.center {
+	text-align: center;
+}
+
+.link {
+	color: $link-color;
+	text-decoration: none;
+}
+
+.bottom-border-line {
 	border-style: solid;
 	border-top-width: 0px;
 	border-left-width: 0px;
@@ -12,6 +23,8 @@ $link-color: rgb(71, 99, 169);
 	border-bottom-width: 1px;
 	border-color: rgb(236, 236, 236);
 }
+
+/* Base layout */
 
 body {
 	margin: 0px;
@@ -28,9 +41,10 @@ body {
 	font-weight: 300;
 }
 
+/* Header */
+
 #header {
 	height: 50px;
-	@include bottom-line();
 }
 
 #header-content {
@@ -38,6 +52,9 @@ body {
 	max-width: 800px;
 	text-align: right;
 }
+
+
+/* Index page */
 
 #posts {
 	display: table;
@@ -54,17 +71,10 @@ body {
 
 	.link {
 		display: table-cell;
-
-		a {
-			color: $link-color;
-			text-decoration: none;
-		}
 	}
 }
 
-.center {
-	text-align: center;
-}
+/* Posts pages */
 
 .title {
 	font-size: 25px;
@@ -74,4 +84,8 @@ body {
 
 p {
 	text-align: justify;
+	img {
+		margin: 0 auto;
+		display: block;
+	}
 }
