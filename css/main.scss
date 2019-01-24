@@ -15,6 +15,11 @@ $link-color: rgb(71, 99, 169);
 	text-decoration: none;
 }
 
+.header-button {
+	color: white;
+	text-decoration: none;
+}
+
 .bottom-border-line {
 	border-style: solid;
 	border-top-width: 0px;
@@ -30,6 +35,7 @@ body {
 	margin: 0px;
 	font-family: 'Open Sans';
 	overflow-y: scroll;
+	min-width: 315px;
 }
 
 #main {
@@ -66,11 +72,9 @@ body {
 #header-content-right {
 	position: absolute;
 	right: 10px;
-	top: 13px;
+	top: 14px;
 	a {
 		margin-right: 10px;
-		color: white;
-		text-decoration: none;
 	}
 
 	text-align: right;
