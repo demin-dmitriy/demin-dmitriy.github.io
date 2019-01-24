@@ -29,12 +29,13 @@ $link-color: rgb(71, 99, 169);
 body {
 	margin: 0px;
 	font-family: 'Open Sans';
+	overflow-y: scroll;
 }
 
 #main {
 	margin: auto;
 	max-width: 760px;
-	padding-top: 15px;
+	padding-top: 21px;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 17px;
@@ -44,12 +45,34 @@ body {
 /* Header */
 
 #header {
-	height: 50px;
+	height: 55px;
+	background-color: rgb(46, 49, 51);
+	color: white;
 }
 
 #header-content {
+	position: relative;
 	margin: auto;
-	max-width: 800px;
+	max-width: 730px;
+	font-size: 18px;
+}
+
+#header-content-left {
+	position: absolute;
+	top: 7px;
+	left: 10px;
+}
+
+#header-content-right {
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	a {
+		margin-right: 10px;
+		color: white;
+		text-decoration: none;
+	}
+
 	text-align: right;
 }
 
@@ -83,6 +106,7 @@ body {
 }
 
 p {
+	text-align: justify;
 	img {
 		margin: 0 auto;
 		display: block;
