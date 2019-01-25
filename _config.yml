@@ -12,3 +12,5 @@ plugins:
 
 sass:
   style: compressed
+
+analytics_tracking_id: UA-88796138-2
