@@ -16,7 +16,7 @@ $link-color: rgb(71, 99, 169);
 }
 
 .header-button {
-	color: white;
+	color: $link-color;
 	text-decoration: none;
 }
 
@@ -52,8 +52,8 @@ body {
 
 #header {
 	height: 55px;
-	background-color: rgb(46, 49, 51);
-	color: white;
+	// background-color: rgb(46, 49, 51); // black color
+	// background-color: rgb(169, 23, 49);
 }
 
 #header-content {
